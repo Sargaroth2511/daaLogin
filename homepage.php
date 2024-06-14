@@ -9,11 +9,10 @@
     <?php
         session_start();
         if(isset($_SESSION['username'])){
-            echo "<h1>Willkommen ".$_SESSION['first_name'].$_SESSION['last_name']."</h1>";
+            echo "<h1>Willkommen ".$_SESSION['first_name']. " ".$_SESSION['last_name']."</h1>";
         } else {
             header("Location: index.php");
         }
     ?> 
-    <h1></h1>
 </body>
 </html>
