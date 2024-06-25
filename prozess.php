@@ -22,6 +22,19 @@
             if($password == $password_confirm){
                 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
             
+                $statement = $connection->prepare("SELECT * FROM users WHERE benutzername=:username");
+                $statement->bindParam(":username", $username);
+                $statement->execute();
+                $daten = $statement->fetch(PDO::FETCH_ASSOC);
+                
+                if(!empty($daten)){
+                    $_SESSION['error'] = "Benutzername existiert bereits";
+                    header("Location: registrierung.php");
+                    exit();
+                }
+
+
+
                 $requete = $connection->prepare("INSERT INTO users (name, vorname, benutzername, email, password, passwort_bestaetigen)  VALUES (:name, :vorname, :benutzername, :email, :password, :passwort_bestaetigen)");
                 $requete->execute([                    
                             'name' => $name,
@@ -34,7 +47,7 @@
                         ]);
 
                     echo "Registrierung erfolgreich";
-                    header("Location: bestaetigung.php");
+                    // header("Location: bestaetigung.php");
                     exit();
                     
                     
