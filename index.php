@@ -1,5 +1,6 @@
 <?php
     require("connection.php");
+    require_once ("JavascriptUtils.php");
 
     session_start();
     if(!isset($_SESSION['site']) || $_SESSION['site'] != "loginApp"){

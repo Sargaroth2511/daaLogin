@@ -13,6 +13,9 @@
         } else {
             header("Location: index.php");
         }
-    ?> 
+    ?>
+    <form action="logout.php" method="post">
+        <button type="submit" name="logout">Logout</button>
+    </form> 
 </body>
 </html>
