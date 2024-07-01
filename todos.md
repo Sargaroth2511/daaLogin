@@ -11,9 +11,9 @@
 
 # Features #
 
-- PW- Überprüfung
-- Logout
-- Redirect
+<!-- - PW- Überprüfung -->
+- Logout - Timer
+<!-- - Redirect -->
 
 # Refactoring #
 

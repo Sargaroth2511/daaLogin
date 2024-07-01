@@ -7,6 +7,12 @@
         $_SESSION = array();
     }
     $_SESSION['site'] = "loginApp";
+
+    if(isset($_SESSION['username'])){
+        header("Location: homepage.php");
+        exit;
+    }
+
     if (isset($_POST["submit"])) {
         $name = $_POST["name"];
         $password = $_POST["password"];
