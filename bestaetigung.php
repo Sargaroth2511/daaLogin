@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrierung Bestätigung</title>
-    <link rel="stylesheet" href="style_bestaetigung.css">
+    <link rel="stylesheet" href="./css/bestaetigung.css">
 </head>
 
 <body>
     <div class="container_">
         <h1>Registrierung erfolgreich</h1>
         <p>Ihre Registrierung war erfolgreich.</p>
-        <a href="index.php" class="btn_">Zurück zur Anmeldungsseite</a>
+        <a href="logout.php" class="btn_">Zurück zur Anmeldungsseite</a>
     </div>
 </body>
 

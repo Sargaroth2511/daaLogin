@@ -7,12 +7,12 @@
 
 # Dokumentation #
 
-- UML- welches?
+<!-- - UML- welches? -->
 
 # Features #
 
 <!-- - PW- Überprüfung -->
-- Logout - Timer
+<!-- - Logout - Timer -->
 <!-- - Redirect -->
 
 # Refactoring #

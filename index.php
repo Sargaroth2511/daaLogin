@@ -45,7 +45,7 @@
     <meta name="viewport" nectiontent="width=device-width, initial-scale=1.0">
     <title>Seite zur Anmeldungsseite</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
