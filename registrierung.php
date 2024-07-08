@@ -40,10 +40,13 @@
             <br>
 
             <label for="email">E-Mail*</label>
-            <input type="text" id="email" name="email" placeholder="E-mail eingeben" class="email" required value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>">
+            <input type="email" id="email" name="email" placeholder="E-mail eingeben" class="email" required value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>">
             <br>
 
-            <label for="password">Passwort*</label>
+            <label for="password" >Passwort*</label>
+            <div >
+            <p id="restrictPara" class="hiddenEl" >"Passwort muss mindestens 8 Zeichen lang sein, ein Großbuchstabe, ein Kleinbuchstabe, eine Zahl und ein Sonderzeichen enthalten."</p>
+            </div>
             <input type="password" id="password" name="password" placeholder="Passwort eingeben" class="email" required>
             <br>
 
@@ -54,14 +57,16 @@
 
             <input type="hidden" name="submit" value="1">
 
-          
-            <a href="index.php" class="btn">Abbrechen</a>
-            
             <input type="submit" name="ok" value="Registrieren">
+          
+            <a href="index.php">
+                <button type="button" class="btn">Abbrechen</button>
+            </a> 
+            
 
         </div>
     </form>
-
+<script src="showPasswordFieldTooltip.js"></script>
 </body>
 
 </html>

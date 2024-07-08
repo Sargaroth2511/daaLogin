@@ -14,7 +14,7 @@
     }
 
     if (isset($_POST["submit"])) {
-        $name = $_POST["name"];
+        $name = trim(strip_tags($_POST['name']));
         $password = $_POST["password"];
         $connection = Connector::getConnection();
         $statement = $connection->prepare("SELECT * FROM users WHERE benutzername=:username");

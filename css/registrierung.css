@@ -15,6 +15,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
  
 label {
@@ -23,7 +25,7 @@ label {
     font-weight: bold;
 }
  
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -31,31 +33,60 @@ input[type="text"], input[type="password"] {
     border-radius: 4px;
 }
  
-button, input[type="submit"], .btn {
-    width: 80%;
+input[type="submit"], .btn {
+    width: 80%; 
     padding: 10px;
     border: none;
     border-radius: 4px;
     color: white;
     cursor: pointer;
     margin-top: 10px;
-    text-decoration: none;
     text-align: center;
-    display: inline-block;
+    font-size: 1rem;
+    display: block;
+    align-self: center;
+    justify-self: center;
+    
+    
 }
  
-input[type="submit"][value="Abbrechen"], .btn {
-    background-color: #ffcc00; /* Or */
+.btn {
+    background-color: #ffcc00;
 }
  
+.btn:hover {
+    background-color: #cc9900; /* Or foncé */
+}
+
 input[type="submit"][value="Registrieren"] {
     background-color: #ff0000; /* Rouge */
 }
- 
-input[type="submit"][value="Abbrechen"]:hover, .btn:hover {
-    background-color: #cc9900; /* Or foncé */
+
+input[type="submit"][value="Registrieren"]:hover {
+    background-color: #550202; /* Rouge */
 }
  
-input[type="submit"][value="Registrieren"]:hover {
-    background-color: #cc0000; /* Rouge foncé */
+
+.hiddenEl{
+    display: none;
+}
+
+#restrictpara{
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: white;
+    max-width: 250px;
+    top: 45vh;
+}
+
+a{
+    text-decoration: none;
+   
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
 }

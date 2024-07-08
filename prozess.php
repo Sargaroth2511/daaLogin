@@ -4,13 +4,13 @@
     $connection = Connector::getConnection();
 
     if(isset($_POST['ok'])){
-            $name = strip_tags($_POST['name']);
-            $vorname = strip_tags($_POST['vorname']);
-            $username = strip_tags($_POST['username']);
-            $email = strip_tags($_POST['email']);
+            $name = trim(strip_tags($_POST['name']));
+            $vorname = trim(strip_tags($_POST['vorname']));
+            $username = trim(strip_tags($_POST['username']));
+            $email = trim(strip_tags($_POST['email']));
             // Check here strip_tags() function
-            $password = strip_tags($_POST['password']);
-            $password_confirm = strip_tags($_POST['password_confirm']);
+            $password = $_POST['password'];
+            $password_confirm = $_POST['password_confirm'];
             
             $_SESSION['name'] = $name;
             $_SESSION['vorname'] = $vorname;
